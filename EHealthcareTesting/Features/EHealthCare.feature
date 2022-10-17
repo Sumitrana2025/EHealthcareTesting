@@ -1,9 +1,18 @@
-﻿Feature: EHealthCare
+﻿Feature: EHealthcare
 
-With this feature, we are going to navigate to Catalog
+A short summary of the feature
 
 @tag1
-Scenario: Showing Lists of products
-	Given I have navigate to EHealthcare website
-	When I click on Catalog button
-	Then It shows lists of Products
+Scenario: Add products to the cart and doing payments
+	Given I enter username
+	Then I entered password
+	When I clicked on Add to cart button
+	Then I click on add to cart symbol button
+	When I clicked on Checkout button
+	When Shipping address page displays and click on next button
+	Then Review order page displays and click on next button
+	When I enter Card Name
+	Then I enter Card number
+	Then I enter expiry date
+	Then I enter CVV
+	When I click on place order button payment successful page displays
